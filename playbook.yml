@@ -9,8 +9,5 @@
   roles:
     - packages
     - shell
-    - workspace
-    - ops
-    - dev
   ### Change to your user! ###
   user: casdavis
