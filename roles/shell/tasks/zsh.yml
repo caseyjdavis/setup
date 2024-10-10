@@ -9,7 +9,7 @@
     - zsh
 
 - name: change user shell to zsh
-  become: yes
+  become: true
   become_user: root
   command: chsh -s /bin/zsh {{ user }} 
 
