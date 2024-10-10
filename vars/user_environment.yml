@@ -1,0 +1,10 @@
+---
+user: caseyjdavis
+#repo_directory: workspace
+#repos:
+#  - git@github.com:jasonwc/noobernetes.io.git
+#  - git@github.com:jasonwc/jasoncarter.io.git
+#  - git@github.com:jasonwc/carter.haus.git
+dotfiles_repo: caseyjdavis/dotfiles
+dotfiles_branch: main
+dotfiles_command: sh install.sh
