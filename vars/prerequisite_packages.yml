@@ -5,3 +5,6 @@ prerequisite_packages:
   - curl
   - tmux
   - unzip
+  - mc
+  - htop
+  - yadm
