@@ -1,4 +1,16 @@
 ## Quick Start
+Install WSL on your machine
+
+```cmd
+wsl --install Ubuntu
+```
+
+Install the FiraCode Nerd Font to your Windows machine for VS Code
+
+```powershell
+choco install firacode
+```
+
 You'll need to get an ssh key into your new Linux environment. Afterwards, run the following:
 
 ```bash
