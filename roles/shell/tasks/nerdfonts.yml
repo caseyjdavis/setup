@@ -1,0 +1,13 @@
+- name: ensure fonts directory
+  file:
+    path: "{{ lookup('env', 'HOME') }}/.fonts"
+    state: directory
+
+- name: Download JetBrainsMono
+  ansible.builtin.unarchive:
+    src: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip
+    dest: ~/.local/share/fonts
+    remote_src: yes
+
+- name: Update Font Cache
+  ansible.builtin.shell: fc-cache -fv
