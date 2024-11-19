@@ -9,5 +9,11 @@
     dest: ~/.local/share/fonts
     remote_src: yes
 
+- name: Download FiraCode
+  ansible.builtin.unarchive:
+    src: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/FiraCode.zip
+    dest: ~/.local/share/fonts
+    remote_src: yes
+
 - name: Update Font Cache
   ansible.builtin.shell: fc-cache -fv
