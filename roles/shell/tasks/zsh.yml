@@ -8,6 +8,11 @@
     - powerline
     - zsh
 
+- name: Ensure a locale exists
+  locale_gen:
+    name: en_US.UTF-8
+    state: present
+
 - name: change user shell to zsh
   become: true
   become_user: root
