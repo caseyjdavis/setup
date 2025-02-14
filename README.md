@@ -38,7 +38,18 @@ ansible-playbook -K playbook.yaml
 ```
 Close your WSL instance after the playbook successfully completes.
 
-##First run
+## First run
 Open it again and zsh plugins and powerline terminal will be configured on first login
 
 ![screenshot](images/firstrun.png)
+
+## Configure Powerline
+
+```bash
+p10k configure
+```
+![screenshot](images/p10kconfig.png)
+
+Run through the wizard selecting your preferences and once you finalize the config you are left with a powerline terminal
+
+![screenshot](images/p10kterminal.png)
