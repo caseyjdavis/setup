@@ -15,10 +15,10 @@ choco install firacode -y
 
 ![screenshot](images/firacode.png)
 
-You'll need to get an ssh key into your new Linux environment. This involves copying your ssh config file to ~/.ssh/ along with your SSH key. Set your github remote origin to your repository to make SSH authentication work
+You'll need to get an ssh key into your new Linux environment. This involves copying your ssh config file to ~/.ssh/ along with your SSH key. Set the permissions on your actual ssh key: ```bash chmod 0600 id_ed25519```. Set your github remote origin to your repository to make SSH authentication work
 
 ```bash
-git remote add origin git@github.com-caseyjdavis:caseyjdavis/setup
+git remote set-url git@github.com-caseyjdavis:caseyjdavis/setup
 ```
 
 Once these are in place clone this repo:
@@ -36,9 +36,9 @@ sudo sh bootstrap.sh
 # Run the ansible playbook
 ansible-playbook -K playbook.yaml
 ```
+Close your WSL instance after the playbook successfully completes.
 
-# Close your WSL instance after the playbook successfully completes.
-
-# Open it again and zsh plugins and powerline terminal will be configured on first login
+##First run
+Open it again and zsh plugins and powerline terminal will be configured on first login
 
 ![screenshot](images/firstrun.png)
