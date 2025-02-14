@@ -15,7 +15,13 @@ choco install firacode -y
 
 ![screenshot](images/firacode.png)
 
-You'll need to get an ssh key into your new Linux environment. This involves copying your ssh config file to ~/.ssh/ along with your SSH key. Once these are in place clone this repo:
+You'll need to get an ssh key into your new Linux environment. This involves copying your ssh config file to ~/.ssh/ along with your SSH key. Set your github remote origin to your repository to make SSH authentication work
+
+```bash
+git remote add origin git@github.com-caseyjdavis:caseyjdavis/setup
+```
+
+Once these are in place clone this repo:
 
 ```bash
 # Clone to your home directory
