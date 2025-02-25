@@ -6,5 +6,6 @@ prerequisite_packages:
   - tmux
   - unzip
   - mc
-  - htop
+  - btop
   - yadm
+  - npm
