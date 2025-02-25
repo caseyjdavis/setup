@@ -11,6 +11,11 @@ wsl --install Ubuntu
 choco install firacode -y
 ```
 
+## Copies Windows Terminal settings to default locale
+```
+Copy-Item -Path "settings.json" -Destination "%LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -Force
+```
+
 ## Configure Windows Terminal to use the Firacode Nerd Font (important!)
 
 ![screenshot](images/firacode.png)
