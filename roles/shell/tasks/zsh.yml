@@ -35,6 +35,9 @@
   command: curl https://raw.githubusercontent.com/morhetz/gruvbox/master/colors/gruvbox.vim --output $HOME/.vim/colors/gruvbox.vim
   when: not gruvbox.stat.exists
 
+- name: install tmux plugin manager
+  command: git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  
 - name: Check for dircolors
   stat: path=/$HOME/.dircolors
   register: dircolors
