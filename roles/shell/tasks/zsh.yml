@@ -27,6 +27,14 @@
   shell: bash -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
   when: not ohmyzsh.stat.exists
 
+- name: Check for gruvbox theme
+  stat: path=$HOME/.vim/colors/gruvbox.vim
+  register: gruvbox
+
+- name: install gruvbox theme for vim
+  command: curl https://raw.githubusercontent.com/morhetz/gruvbox/master/colors/gruvbox.vim --output $HOME/.vim/colors/gruvbox.vim
+  when: not gruvbox.stat.exists
+
 - name: Check for dircolors
   stat: path=/$HOME/.dircolors
   register: dircolors
