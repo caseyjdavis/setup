@@ -9,3 +9,4 @@ prerequisite_packages:
   - btop
   - yadm
   - npm
+  - dnsutils
