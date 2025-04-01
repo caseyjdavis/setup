@@ -9,9 +9,6 @@
 - name: Install dotfiles
   shell: cd {{ lookup("env", "HOME") }}/dotfiles && {{ dotfiles_command }}
 
-- name: Run PlugInstall in Vim
-  shell: vim +'PlugInstall --sync' +qa
-
 - name: Check for gruvbox theme for vim
   stat: path=$HOME/.vim/colors/gruvbox.vim
   register: gruvbox
@@ -19,3 +16,6 @@
 - name: install gruvbox theme for vim
   command: curl https://raw.githubusercontent.com/morhetz/gruvbox/master/colors/gruvbox.vim --output $HOME/.vim/colors/gruvbox.vim
   when: not gruvbox.stat.exists
+
+- name: Run PlugInstall in Vim
+  shell: vim +'PlugInstall --sync' +qa

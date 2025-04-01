@@ -10,3 +10,4 @@ prerequisite_packages:
   - yadm
   - npm
   - dnsutils
+  - fzf
